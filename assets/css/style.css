@@ -1,75 +1,85 @@
-
-/* check if ccs is linked */
-html {
-	background-color: rgb(110, 132, 145);
+html{
+  color: white;
+  background-color: rgb(110, 132, 145);
 }
 
-.developer{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
-    color: white;
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  text-align: center; 
 }
 
-.header{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: right;
-}
-/* font-size: 10px; */
-
-.about-me{
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
 }
 
-.my-work{
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
-}
-.contact-me{
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-.info{
-
-    color: white;
-    font-size: 30px;
-    line-height: 30px;
+#header {
+  width: 92vw;
+  display: flex;
+  background: rgb(34, 34, 41);
+  flex-flow: row ;
+  justify-content:space-evenly;
+  align-items: flex-end;
+  /* border: rgb(255, 0, 234) solid 5px; */
+  /* text-align: right;  */
+  /* list-style: none;
+  margin: 0; */
+  padding: 40px;
 }
 
-.footer{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: right;
-}
-
-h4{
-    
-    color: white;
-    /* font-size: 80px;
-    line-height: 500px; */
-
+.h_item{
+  /* border: yellow solid 5px; */
+  width: 10rem;
+  display: flex;
+  flex-flow: row wrap;
+  float: right;
 }
 
 
-
-
-/* Test Code
-
-
-.test{
-
-    color: salmon;
-    font-size: 50px;
-    line-height: 100px;
+.f_item{
+  /* border: yellow solid 5px; */
+  width: 10rem;
+  display: flex;
+  flex-flow: row wrap;
+  float: right;
 }
 
 
-font-weight: bolder;
+.app {
+  border-width: 10px;
+  padding: 10px;
+  float: left;
+  width: 25%;
+}
 
-    font-size: 24px;
+.app h4 {
+  padding: 20px;
+  text-align: center;
+}
 
-    line-height: 50px;
+.app a {
+  width: 100%;
+}
 
+/* apps are split into two columns at 992px or smaller */
+@media screen and (max-width: 1020px) {
+  .app {
+    width: 40%;
+  }
 
+}
 
-*/
+/* apps are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 600px) {
+  .app {
+    width: 100%;
+  }
+}
+
+.footer {
+  background: rgb(34, 34, 41);
+  padding: 30px;
+  text-align: right;
+}
+
